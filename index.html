@@ -11,19 +11,23 @@
     <div class="container">
         <div class="row justify-content-center align-items-center" style="height: 100vh">
         <div class="col-md-5">
+            <div class="alert alert-danger" role="alert">
+                Data telah berhasil disimpan.
+            </div>
             <div class="card">
                 <div class="card-header">LOGIN</div>
                 <div class="card-body">
                     <form action="" autocomplete="off">
-                        <div class="form-grop">
+                        <div class="form-group mb-3">
                             <label for="email">Email address</label>
-                                <input type="text" name="email" id="email" class="form-control">
+                                <input type="text" name="email" id="email" class="form-control is-invalid">
+                                <span class="invalid-feedback">Sorry, the email you entered could'nt be found.</span>
                         </div>
-                        <div class="form-grop">
+                        <div class="form-group mb-4">
                             <label for="password">Password</label>
-                            <input type="text" name="password" id="password" class="form-control">
+                            <input type="password" name="password" id="password" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                        <button type="submit" class="btn btn-primary w-100">LOGIN</button>
                     </form>
                 </div>
            </div>
